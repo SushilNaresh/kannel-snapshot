@@ -1,0 +1,73 @@
+# ── SVN metadata (this is a git mirror of an SVN snapshot) ───
+.svn/
+
+# ── Local agent context ───────────────────────────────────────
+.amazonq/
+
+# ── Build artifacts ───────────────────────────────────────────
+*.o
+*.lo
+*.la
+*.a
+*.so
+*.dylib
+
+# ── Libtool / autotools generated ─────────────────────────────
+.libs/
+.deps/
+autom4te.cache/
+config.log
+config.status
+config.guess
+config.sub
+config.rpath
+config.nice
+stamp-h1
+libtool
+ltmain.sh
+compile
+depcomp
+install-sh
+missing
+mkinstalldirs
+aclocal.m4
+
+# ── Compiled binaries (keep .c sources, drop executables) ─────
+gw/bearerbox
+gw/smsbox
+gw/wapbox
+test/drive_smpp
+test/drive_wapbox
+test/fakesmsc
+test/fakewap
+test/decompile
+test/test_*
+test/timestamp
+test/udpfeed
+test/wapproxy
+test/wml_tester
+utils/mtbatch
+utils/run_kannel_box
+utils/seewbmp
+utils/start-stop-daemon
+wmlscript/wmlsc
+wmlscript/wmlsdasm
+wmlscript/make-op-table
+
+# ── Generated parser (keep .y grammar source) ─────────────────
+wmlscript/wsgram.c
+wmlscript/wsgram.h
+
+# ── Runtime / temp ────────────────────────────────────────────
+/tmp/
+*.log
+*.pid
+gw/*.pem
+gw/*.key
+
+# ── macOS ─────────────────────────────────────────────────────
+.DS_Store
+
+# ── Python ────────────────────────────────────────────────────
+__pycache__/
+*.pyc
